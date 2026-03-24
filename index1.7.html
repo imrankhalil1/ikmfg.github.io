@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IK Manufacturing Finance | ikmfg.com</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #ffffff;
+        color: #333;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+    }
+
+    /* Soft Gradient Background (Option B) */
+    section, .hero {
+        background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+    }
+
+    /* Navigation */
+    header {
+        background: #0A1A2F;
+        padding: 16px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        color: white;
+    }
+
+    /* Logo Option 2 — Square Icon + Text */
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-box {
+        background: #FF7A1A;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-weight: 700;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        color: #FF7A1A;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 100px 20px;
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        color: #0A1A2F;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #555;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .hero .pill-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .pill {
+        background: white;
+        padding: 10px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        border: 1px solid #dcdcdc;
+        cursor: pointer;
+    }
+
+    .pill:hover {
+        background: #FF7A1A;
+        border-color: #FF7A1A;
+        color: white;
+    }
+
+    /* Sections */
+    section {
+        padding: 80px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h1, h2 {
+        color: #0A1A2F;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    .sub {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 17px; /* FIXED FONT SIZE */
+        color: #444;
+        line-height: 1.7;
+    }
+
+    ul {
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-size: 17px;
+    }
+
+    /* Contact Form */
+    form {
+        margin-top: 20px;
+        display: grid;
+        gap: 16px;
+    }
+
+    input, textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    textarea {
+        height: 140px;
+        resize: vertical;
+    }
+
+    /* CTA Button */
+    .btn {
+        display: inline-block;
+        background: #FF7A1A;
+        color: white;
+        padding: 12px 22px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 20px;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #e56d15;
+    }
+
+    /* Footer */
+    footer {
+        background: #0A1A2F;
+        color: white;
+        padding: 30px 20px;
+        margin-top: 60px;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span class="logo-box">IK</span>
+            IK Manufacturing Finance
+        </div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#mission">Mission</a>
+            <a href="#founder">Founder</a>
+            <a href="#services">Services</a>
+            <a href="#approach">Approach</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <h1>Financial Clarity for Manufacturers</h1>
+    <p>
+        We help small and mid‑sized manufacturers improve financial performance through costing accuracy, 
+        inventory reliability, and smarter systems.  
+        With 25+ years of experience, our senior‑level team brings deep financial and operational expertise 
+        to align your numbers with real‑world operations.
+    </p>
+
+    <div class="pill-container">
+        <a href="#services" class="pill">Costing Accuracy</a>
+        <a href="#services" class="pill">Inventory Reliability</a>
+        <a href="#services" class="pill">Systems & Automation</a>
+    </div>
+
+    <a href="#contact" class="btn">Start the Conversation</a>
+</section>
+
+<!-- MISSION -->
+<section id="mission">
+    <h1>Mission</h1>
+    <p class="sub">
+        Helping manufacturers gain clarity over their numbers and build financial systems that drive 
+        profitable, sustainable growth.
+    </p>
+
+    <h2>Why This Mission Matters</h2>
+    <p>
+        Manufacturers operate in environments where small inaccuracies compound into major financial 
+        consequences. When costing, inventory, or systems fall out of sync with operational reality, 
+        leaders lose visibility into margin, cash flow, and performance.
+    </p>
+
+    <h2>The Challenges</h2>
+    <ul>
+        <li>Costing that doesn’t reflect how products are actually made</li>
+        <li>Inventory discrepancies that erode trust in the numbers</li>
+        <li>Systems that are under‑utilized or overly manual</li>
+        <li>Decisions made without reliable financial insight</li>
+    </ul>
+
+    <h2>How Our Mission Solves These Challenges</h2>
+    <p>
+        We focus on the root causes — not symptoms. By aligning financial data with operational truth, 
+        we help manufacturers make confident decisions, improve profitability, and build systems that scale 
+        with growth.
+    </p>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder">
+    <h1>Founder</h1>
+
+    <p class="sub">
+        Manufacturing Financials is led by its Founder and CEO, Imran Khalil, a Dallas-based finance and 
+        operations executive with more than 25 years of experience in manufacturing operations and financial 
+        leadership. He has held senior roles with global and mid-sized manufacturers including Newell 
+        Rubbermaid, Tetra Pak, Elkay Manufacturing, and Apogee Foods, partnering with executive teams and 
+        plant leadership to improve financial reporting, optimize inventory management, implement costing 
+        systems, and align financial performance with operational goals.
+    </p>
+
+    <p>
+        Imran’s expertise spans product costing, inventory optimization, financial planning and analysis, 
+        ERP systems, capital investment evaluation, and operational performance measurement. He has led 
+        major financial initiatives including capital investment projects exceeding $37 million, global 
+        financial planning processes, and multi-plant performance improvement programs across operations 
+        in the United States, Mexico, and China. Through Manufacturing Financials, he now brings this 
+        enterprise-level experience to small and mid-sized manufacturers that need experienced financial 
+        guidance but may not have the resources for a full-time CFO or finance team.
+    </p>
+
+    <h2>Team of Senior Professionals</h2>
+    <p>
+        Every engagement is led by senior‑level professionals across finance, operations, supply chain, 
+        and systems. This ensures deep expertise, practical solutions, and no hand‑offs to junior teams.
+    </p>
+
+    <h2>Philosophy</h2>
+    <p>
+        Our work sits at the intersection of finance, operations, and systems. Financial clarity only exists 
+        when the numbers match what’s happening on the shop floor. Our approach is hands‑on, practical, and 
+        grounded in operational truth.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h1>Services</h1>
+    <p class="sub">Three tightly connected areas that directly impact margin, cash flow, and confidence in your numbers.</p>
+
+    <h2>Costing Accuracy</h2>
+    <ul>
+        <li>Review bills of materials for completeness and accuracy</li>
+        <li>Validate labor routings, cycle times, and setup assumptions</li>
+        <li>Refine overhead allocation methods and cost drivers</li>
+        <li>Quantify the impact of inaccurate costing on margin</li>
+    </ul>
+
+    <h2>Inventory Reliability</h2>
+    <ul>
+        <li>Analyze discrepancies between book and physical inventory</li>
+        <li>Identify patterns in write‑offs and adjustments</li>
+        <li>Assess cycle counting, receiving, and production reporting</li>
+        <li>Connect inventory reliability to cash flow and service levels</li>
+    </ul>
+
+    <h2>Systems & Automation</h2>
+    <ul>
+        <li>Evaluate ERP usage and reporting gaps</li>
+        <li>Identify manual workflows suitable for automation</li>
+        <li>Design AI‑assisted checks for data quality</li>
+        <li>Ensure solutions fit team size and capacity</li>
+    </ul>
+</section>
+
+<!-- APPROACH -->
+<section id="approach">
+    <h1>Approach</h1>
+    <p class="sub">A senior‑led, practical, and operationally grounded way of working.</p>
+
+    <h2>How We Work</h2>
+    <ul>
+        <li>Hands‑on engagement — no hand‑offs to junior teams</li>
+        <li>Grounded in operational reality, not just spreadsheets</li>
+        <li>Focused on measurable impact: margin, cash flow, and data reliability</li>
+    </ul>
+
+    <h2>What You Can Expect</h2>
+    <ul>
+        <li>Clear, structured analysis of costing, inventory, and systems</li>
+        <li>Practical recommendations prioritized by impact</li>
+        <li>Optional support implementing improvements</li>
+    </ul>
+
+    <h2>What We Need From You</h2>
+    <ul>
+        <li>Access to current processes across operations and finance</li>
+        <li>Access to relevant systems and data</li>
+        <li>Time on‑site to observe workflows and constraints</li>
+        <li>Open dialogue about where the numbers don’t feel right</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h1>Contact</h1>
+    <p class="sub">Share your information and we’ll reach out to schedule an introductory conversation.</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Company Name" />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Phone Number" />
+        <textarea placeholder="How can we help?" required></textarea>
+        <button type="submit" class="btn">Submit Inquiry</button>
+    </form>
+</section>
+
+<footer>
+    © IK Manufacturing Finance — Dallas, TX — ikmfg.com
+</footer>
+
+</body>
+</html>
