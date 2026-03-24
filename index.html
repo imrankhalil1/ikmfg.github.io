@@ -377,14 +377,23 @@
     <h1>Contact</h1>
     <p class="sub">Share your information and we’ll reach out to schedule an introductory conversation.</p>
 
-    <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="text" placeholder="Company Name" />
-        <input type="email" placeholder="Email Address" required />
-        <input type="text" placeholder="Phone Number" />
-        <textarea placeholder="How can we help?" required></textarea>
-        <button type="submit" class="btn">Submit Inquiry</button>
-    </form>
+   <form action="https://formspree.io/f/mbdprrpd" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+
+    <input type="text" name="name" placeholder="Your Name" required />
+
+    <input type="text" name="company" placeholder="Company Name" />
+
+    <input type="email" name="email" placeholder="Email Address" required />
+
+    <input type="text" name="phone" placeholder="Phone Number" />
+
+    <textarea name="message" placeholder="How can we help?" required></textarea>
+
+    <!-- Redirect to thank-you page -->
+    <input type="hidden" name="_redirect" value="https://ikmfg.com/thank-you.html">
+
+    <button type="submit" class="btn">Submit Inquiry</button>
+</form>
 </section>
 
 <footer>
