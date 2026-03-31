@@ -205,6 +205,49 @@
         text-align: center;
         font-size: 14px;
     }
+    /* Hamburger Menu Base */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* MOBILE MENU BEHAVIOR */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0A1A2F;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 220px;
+        border-left: 1px solid #FF7A1A;
+        border-bottom: 1px solid #FF7A1A;
+    }
+
+    body.nav-open .nav-links {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+}
 /* MOBILE RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
 
