@@ -14,7 +14,7 @@
         line-height: 1.6;
         scroll-behavior: smooth;
     }
-<!-- v5 -->
+
     header {
         background: #0A1A2F;
         padding: 16px 0;
@@ -22,10 +22,7 @@
         top: 0;
         z-index: 1000;
     }
-/* FORCE HEADER BACKGROUND TO SHOW */
-header {
-    background-color: #0A1A2F !important;
-}
+
     nav {
         max-width: 1100px;
         margin: auto;
@@ -64,6 +61,49 @@ header {
 
     nav a:hover {
         color: #FF7A1A;
+    }
+
+    /* HAMBURGER MENU */
+    .hamburger {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* MOBILE MENU */
+    @media (max-width: 768px) {
+
+        .hamburger {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: #0A1A2F;
+            padding: 20px;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 220px;
+            border-left: 1px solid #FF7A1A;
+            border-bottom: 1px solid #FF7A1A;
+        }
+
+        body.nav-open .nav-links {
+            display: flex;
+        }
+
+        nav a {
+            margin: 10px 0;
+            font-size: 16px;
+        }
     }
 
     section {
@@ -105,27 +145,31 @@ header {
 
 </head>
 <body>
+
 <header>
     <nav>
         <div class="logo">
             <span class="logo-box">IK</span>
             IK Manufacturing Finance
         </div>
-        <div>
-            <a href="index1.7.html#home">Home</a>
-            <a href="index1.7.html#mission">Mission</a>
-            <a href="index1.7.html#founder">Founder</a>
-            <a href="index1.7.html#services">Services</a>
-            <a href="index1.7.html#approach">Approach</a>
+
+        <div class="hamburger" onclick="document.body.classList.toggle('nav-open')">
+            ☰
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#mission">Mission</a>
+            <a href="index.html#founder">Founder</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#approach">Approach</a>
             <a href="engagement.html">How We Deliver</a>
-            <a href="index1.7.html#contact">Contact</a>
+            <a href="index.html#contact">Contact</a>
         </div>
     </nav>
 </header>
 
-
-<section >
-    
+<section>
     <p>Manufacturers don’t need another system overhaul or an open‑ended consulting engagement. They need a disciplined, practical approach that reveals the truth, fixes the root causes, and keeps the business running on facts. Our engagement model provides exactly that.</p>
 
     <h2>1. Diagnostic — Find the Truth</h2>
@@ -139,12 +183,19 @@ header {
     <h2>3. Control Tower — Maintain Accuracy & Visibility</h2>
     <p>Costing and operational truth require ongoing discipline. We provide continuous support to keep your data clean, your processes consistent, and your numbers reliable. This includes monthly costing reviews, variance analysis, BOM/routing maintenance, inventory reliability checks, and continuous improvement insights.</p>
     <p>You gain a senior‑level partner ensuring your operations stay aligned, accurate, and financially sound.</p>
-
 </section>
 
 <footer>
     © IK Manufacturing Finance — Dallas, TX — ikmfg.com
 </footer>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    });
+});
+</script>
 
 </body>
 </html>
