@@ -127,16 +127,32 @@ nav a {
     }
 }
 
-/* HERO */
-.hero {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+/* HERO — IMAGE LEFT, TEXT RIGHT */
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-image {
+    background-image: url('https://images.unsplash.com/photo-1581091870627-3a0fa5d1d4c1?auto=format&fit=crop&w=900&q=80');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    height: 360px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.hero-text {
+    text-align: left;
 }
 
 .pill-container {
     display: flex;
-    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
     margin: 20px 0;
@@ -161,6 +177,16 @@ nav a {
     text-decoration: none;
     margin-top: 20px;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-image {
+        height: 260px;
+    }
 }
 
 /* FOUNDER — SIDE-BY-SIDE */
@@ -239,21 +265,27 @@ IK Manufacturing Finance
 </nav>
 </header>
 
-<!-- HOME -->
-<section id="home" class="hero">
-<h1>Financial Clarity for Manufacturers</h1>
-<p>
-We help small and mid sized manufacturers improve financial performance through costing accuracy, 
-inventory reliability, and smarter systems.
-</p>
+<!-- HERO -->
+<section id="home">
+<div class="hero-wrapper">
+    <div class="hero-image"></div>
 
-<div class="pill-container">
-<a href="#services" class="pill">Costing Accuracy</a>
-<a href="#services" class="pill">Inventory Reliability</a>
-<a href="#services" class="pill">Systems & Automation</a>
+    <div class="hero-text">
+        <h1>Financial Clarity for Manufacturers</h1>
+        <p>
+            We help small and mid-sized manufacturers improve financial performance through costing accuracy, 
+            inventory reliability, and smarter systems.
+        </p>
+
+        <div class="pill-container">
+            <a href="#services" class="pill">Costing Accuracy</a>
+            <a href="#services" class="pill">Inventory Reliability</a>
+            <a href="#services" class="pill">Systems & Automation</a>
+        </div>
+
+        <a href="#contact" class="btn">Start the Conversation</a>
+    </div>
 </div>
-
-<a href="#contact" class="btn">Start the Conversation</a>
 </section>
 
 <!-- MISSION -->
