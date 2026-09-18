@@ -142,6 +142,7 @@ nav a {
     display: flex;
 justify-content: center;
 align-items: center;
+    overflow: visible;
     background-color: #ffffff;        /* clean white board */
     border: 2px solid #0A1A2F;        /* IK navy border */
     border-left: 6px solid #FF7A1A;   /* IK orange accent */
@@ -158,6 +159,9 @@ align-items: center;
     color: #0A1A2F;
     letter-spacing: 0.5px;
     line-height: 1.1;
+    position: relative;     /* FIX 1 */
+    z-index: 10;            /* FIX 2 */
+    display: block;         /* FIX 3 */
 }
 .pill-container {
     display: flex;
