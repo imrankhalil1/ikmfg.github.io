@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>IK Manufacturing Finance | ikmfg.com</title>
 
 <style>
+
 /* GLOBAL */
 body {
     margin: 0;
@@ -127,7 +129,7 @@ nav a {
     }
 }
 
-/* HERO — IMAGE LEFT, TEXT RIGHT */
+/* HERO — WHITEBOARD VERSION */
 .hero-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -140,29 +142,31 @@ nav a {
 
 .hero-image {
     display: flex;
-justify-content: center;
-align-items: center;
-    overflow: visible;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;        /* clean white board */
     border: 2px solid #0A1A2F;        /* IK navy border */
     border-left: 6px solid #FF7A1A;   /* IK orange accent */
     border-radius: 12px;
     height: 360px;
-    width: 100%;                      /* REQUIRED */
-    min-width: 300px;                 /* PREVENTS collapse */
+    width: 100%;
+    min-width: 300px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.10);
 }
+
 .hero-image-text {
-    font-family: 'Georgia', serif;   /* CLASSIC FONT */
-    font-size: 32px;                 /* SMALLER SIZE */
+    font-family: 'Georgia', serif;
+    font-size: 32px;
     font-weight: 600;
     color: #0A1A2F;
-    letter-spacing: 0.3px;           /* Tighter, more classic */
+    letter-spacing: 0.3px;
     line-height: 1.2;
-    position: relative;
-    z-index: 10;
-    display: block;
 }
+
+.hero-text {
+    text-align: left;
+}
+
 .pill-container {
     display: flex;
     gap: 12px;
@@ -201,7 +205,7 @@ align-items: center;
     }
 }
 
-/* FOUNDER — SIDE-BY-SIDE */
+/* FOUNDER */
 .founder-grid {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
@@ -251,6 +255,7 @@ footer {
     margin-top: 40px;
     font-size: 14px;
 }
+
 </style>
 </head>
 
@@ -259,20 +264,20 @@ footer {
 <header>
 <nav>
 <div class="logo">
-<span class="logo-box">IK</span>
-IK Manufacturing Finance
+    <span class="logo-box">IK</span>
+    IK Manufacturing Finance
 </div>
 
 <div class="hamburger" onclick="document.body.classList.toggle('nav-open')">☰</div>
 
 <div class="nav-links">
-<a href="#home">Home</a>
-<a href="#mission">Mission</a>
-<a href="#founder">Founder</a>
-<a href="#services">Services</a>
-<a href="#approach">Approach</a>
-<a href="engagement.html">How We Deliver</a>
-<a href="#contact">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#mission">Mission</a>
+    <a href="#founder">Founder</a>
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="engagement.html">How We Deliver</a>
+    <a href="#contact">Contact</a>
 </div>
 </nav>
 </header>
@@ -280,50 +285,62 @@ IK Manufacturing Finance
 <!-- HERO -->
 <section id="home">
 <div class="hero-wrapper">
-   <div class="hero-image">
-    <div class="hero-image-text">Operational Truth</div>
-</div>
-      <div class="hero-text">
-        <h1>What does it actually cost you to make what you make?</h1>
-        <p>A forensic reconstruction of your plant’s true material, labor, and overhead cost — rebuilt from physical counts, payroll detail, production flow, and GL reconciliation.</p>
 
-            
-  
+    <div class="hero-image">
+        <div class="hero-image-text">Operational Truth</div>
+    </div>
+
+    <div class="hero-text">
+        <h1>Forensic Clarity for Manufacturers</h1>
+        <p>
+            We help small and mid-sized food, packaging, and industrial manufacturers across the
+            Dallas–Fort Worth area uncover the true cost of production — using forensic
+            accounting and internal-audit-driven methods, not assumptions.
+        </p>
+
+        <div class="pill-container">
+            <a href="#services" class="pill">Costing Accuracy</a>
+            <a href="#services" class="pill">Inventory Reliability</a>
+            <a href="#services" class="pill">Systems & Automation</a>
+        </div>
+
+        <a href="#contact" class="btn">Start the Conversation</a>
+    </div>
+
+</div>
+</section>
+
 <!-- MISSION -->
 <section id="mission">
 <h1>Mission</h1>
 <p class="sub">
 Helping DFW food, packaging, and industrial manufacturers gain forensic clarity over their true
 production costs and build audit-driven systems that drive profitable, sustainable growth.
-
 </p>
 
 <h2>Why This Mission Matters</h2>
-<p>
-Manufacturers operate in environments where small inaccuracies compound into major financial 
-consequences.
-</p>
+<p>Manufacturers operate in environments where small inaccuracies compound into major financial consequences.</p>
 
 <h2>The Challenges</h2>
 <ul>
-<li>Costing that doesn’t reflect how products are actually made</li>
-<li>Inventory discrepancies that erode trust in the numbers</li>
-<li>Systems that are under utilized or overly manual</li>
-<li>Decisions made without reliable financial insight</li>
+    <li>Costing that doesn’t reflect how products are actually made</li>
+    <li>Inventory discrepancies that erode trust in the numbers</li>
+    <li>Systems that are under utilized or overly manual</li>
+    <li>Decisions made without reliable financial insight</li>
 </ul>
 
 <h2>How Our Mission Solves These Challenges</h2>
 <p>
 We use forensic accounting and internal-audit methods to align financial data with operational
 truth, so leaders can make confident decisions grounded in fact, not assumption.
-
 </p>
 </section>
 
 <!-- FOUNDER -->
 <section id="founder" class="founder-grid">
+
 <div class="founder-photo-wrapper">
-<img src="imran-founder.jpg" alt="Imran Khalil" class="founder-img">
+    <img src="imran-founder.jpg" alt="Imran Khalil" class="founder-img">
 </div>
 
 <div class="founder-content">
@@ -334,45 +351,28 @@ truth, so leaders can make confident decisions grounded in fact, not assumption.
 <p class="sub">
 IK Manufacturing Finance is led by its Founder and CEO, Imran Khalil, a Dallas-based finance and
 operations executive with more than 20 years of experience in manufacturing operations and
-financial leadership. He has held senior roles with global and mid-sized manufacturers including
-Newell Rubbermaid, Tetra Pak, Elkay Manufacturing, and Apogee Foods, partnering with executive
-teams and plant leadership to improve financial reporting, optimize inventory management,
-implement costing systems, and align financial performance with operational goals.
+financial leadership...
 </p>
 
 <p>
-Imran has a MS degree and is an Enrolled Agent (EA) with the IRS and a member of the Institute of Internal Auditors
-(IIA), bringing a forensic, audit-driven approach to every engagement &mdash; reconstructing what
-actually happened on the floor, not relying on standard-cost assumptions. His expertise spans
-forensic cost reconstruction, product costing, inventory optimization, financial planning and
-analysis, ERP systems, capital investment evaluation, and operational performance measurement. He
-has led major financial initiatives including capital investment projects exceeding $37 million,
-global financial planning processes, and multi-plant performance improvement programs across
-operations in the United States, Mexico, and China.
+Imran has a MS degree and is an Enrolled Agent (EA) with the IRS and a member of the Institute of Internal Auditors...
 </p>
 
 <p>
 Through IK Manufacturing Finance, he now brings this enterprise-level, audit-driven experience
-specifically to small and mid-sized food, packaging, and industrial manufacturers in the DFW area
-who need experienced financial guidance but may not have the resources for a full-time CFO or
-finance team.
+specifically to small and mid-sized food, packaging, and industrial manufacturers in the DFW area...
 </p>
 
 <h2>Team of Senior Professionals</h2>
 <p>
-Every engagement is supported by a network of senior-level professionals &mdash; trusted former
-colleagues and collaborators from finance, operations, supply chain, and systems roles &mdash;
-brought in as needed based on each engagement's scope. This ensures deep expertise and practical
-solutions without unnecessary overhead or hand-offs to junior teams.
+Every engagement is supported by a network of senior-level professionals...
 </p>
 
 <h2>Philosophy</h2>
 <p>
-Financial clarity only exists when the numbers match what's happening on the shop floor. Our
-approach is hands-on, practical, and grounded in forensic, audit-ready methodology &mdash; not
-assumptions.
-
+Financial clarity only exists when the numbers match what's happening on the shop floor...
 </p>
+
 </div>
 </section>
 
@@ -383,26 +383,26 @@ assumptions.
 
 <h2>Costing Accuracy</h2>
 <ul>
-<li>Review bills of materials</li>
-<li>Validate labor routings</li>
-<li>Refine overhead allocation</li>
-<li>Quantify margin impact</li>
+    <li>Review bills of materials</li>
+    <li>Validate labor routings</li>
+    <li>Refine overhead allocation</li>
+    <li>Quantify margin impact</li>
 </ul>
 
 <h2>Inventory Reliability</h2>
 <ul>
-<li>Analyze discrepancies</li>
-<li>Identify write-off patterns</li>
-<li>Assess cycle counting</li>
-<li>Connect inventory to cash flow</li>
+    <li>Analyze discrepancies</li>
+    <li>Identify write-off patterns</li>
+    <li>Assess cycle counting</li>
+    <li>Connect inventory to cash flow</li>
 </ul>
 
 <h2>Systems & Automation</h2>
 <ul>
-<li>Evaluate ERP usage</li>
-<li>Identify automation opportunities</li>
-<li>Design AI-assisted checks</li>
-<li>Ensure solutions fit team capacity</li>
+    <li>Evaluate ERP usage</li>
+    <li>Identify automation opportunities</li>
+    <li>Design AI-assisted checks</li>
+    <li>Ensure solutions fit team capacity</li>
 </ul>
 </section>
 
@@ -413,16 +413,16 @@ assumptions.
 
 <h2>How We Work</h2>
 <ul>
-<li>Hands-on engagement</li>
-<li>Grounded in operational reality</li>
-<li>Focused on measurable impact</li>
+    <li>Hands-on engagement</li>
+    <li>Grounded in operational reality</li>
+    <li>Focused on measurable impact</li>
 </ul>
 
 <h2>What You Can Expect</h2>
 <ul>
-<li>Clear, structured analysis</li>
-<li>Practical recommendations</li>
-<li>Optional implementation support</li>
+    <li>Clear, structured analysis</li>
+    <li>Practical recommendations</li>
+    <li>Optional implementation support</li>
 </ul>
 </section>
 
@@ -432,13 +432,13 @@ assumptions.
 <p class="sub">Share your information and we’ll reach out to schedule an introductory conversation.</p>
 
 <form action="https://formspree.io/f/mbdprrpd" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-<input type="text" name="name" placeholder="Your Name" required />
-<input type="text" name="company" placeholder="Company Name" />
-<input type="email" name="email" placeholder="Email Address" required />
-<input type="text" name="phone" placeholder="Phone Number" />
-<textarea name="message" placeholder="How can we help?" required></textarea>
-<input type="hidden" name="_redirect" value="https://ikmfg.com/thank-you.html">
-<button type="submit" class="btn">Submit Inquiry</button>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="text" name="company" placeholder="Company Name" />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <input type="text" name="phone" placeholder="Phone Number" />
+    <textarea name="message" placeholder="How can we help?" required></textarea>
+    <input type="hidden" name="_redirect" value="https://ikmfg.com/thank-you.html">
+    <button type="submit" class="btn">Submit Inquiry</button>
 </form>
 </section>
 
@@ -456,3 +456,4 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 </body>
 </html>
+
